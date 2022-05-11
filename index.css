@@ -1,3 +1,21 @@
-.debug {
-    border: 1px dashed red;
+@charset "utf-8";
+
+p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+body{
+	animation: bgchange 20s ease infinite;/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+}
+
+@keyframes bgchange{
+      0%   {background-image:url(1.jpg);}
+      25%  {background-image:url(2.jpg);}
+      50%  {background-image:url(3.jpg);}
+      75%  {background-image:url(1.jpg);}
+      90%  {background-image:url(2.jpg);}
+      100% {background-image:url(3.jpg);}
   }
